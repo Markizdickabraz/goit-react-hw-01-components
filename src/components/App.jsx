@@ -1,16 +1,15 @@
+import UserCard from "./userCard/userCard";
+import User from '../../src/user.json'
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+    <UserCard
+  username={User.username}
+  tag={User.tag}
+  location={User.location}
+  avatar={User.avatar}
+  stats={User.stats} />
     </div>
   );
 };
