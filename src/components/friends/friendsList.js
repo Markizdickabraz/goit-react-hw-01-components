@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import FriendCard from "./friend"
 import {FriendListStyle } from "./friends.styled";
 
@@ -15,4 +16,7 @@ export default function FriendList({ friends }) {
       ))}
     </FriendListStyle>
   );
+}
+FriendList.prototype = {
+  friends:PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
 }

@@ -32,9 +32,3 @@ background-color: ${props => {
    }
 }};
 `;
-// ${(props)=>{
-//     if (props.isOnline) {
-//         background - color: green;
-//     }
-//     background - color: red;
-// }}

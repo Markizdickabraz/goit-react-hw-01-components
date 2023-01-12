@@ -1,5 +1,5 @@
+import PropTypes from 'prop-types';
 import { FriendItem, Status } from "./friends.styled";
-
 
 
 export default function FriendCard({avatar, name, isOnline}) {
@@ -10,4 +10,10 @@ export default function FriendCard({avatar, name, isOnline}) {
             <p className="name">{name }</p>
 </FriendItem>
     )
+};
+
+FriendCard.propTypes = {
+    avatar: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    isOnline:PropTypes.bool.isRequired,
 }
