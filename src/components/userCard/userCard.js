@@ -1,4 +1,6 @@
+import PropTypes from 'prop-types';
 import { Avatar, Description, NameTagLocation, Profile, Stats, StatsItem } from "./userCard.styled"
+
 export default function UserCard({ username, tag, location, avatar, stats }) {
     return (
         <Profile>
@@ -6,13 +8,11 @@ export default function UserCard({ username, tag, location, avatar, stats }) {
     <Avatar
       src={avatar}
       alt={tag}
-      
     />
     <NameTagLocation>{username}</NameTagLocation>
     <NameTagLocation>@{tag}</NameTagLocation>
     <NameTagLocation>{location}</NameTagLocation>
   </Description>
-
   <Stats>
     <StatsItem>
       <span className="label">Followers</span>
@@ -29,4 +29,12 @@ export default function UserCard({ username, tag, location, avatar, stats }) {
   </Stats>
 </Profile>
     )
+}
+
+UserCard.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats:PropTypes.objectOf(PropTypes.number).isRequired,
 }
