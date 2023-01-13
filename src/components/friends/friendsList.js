@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
-import FriendCard from "./friend"
+import FriendListItem from "./friendListItem"
 import {FriendListStyle } from "./friends.styled";
 
 export default function FriendList({ friends }) {
   return (
     <FriendListStyle>
       {friends.map(friends => (
-        <FriendCard 
+        <FriendListItem
         key={friends.id}
         avatar={friends.avatar}
         name={friends.name}

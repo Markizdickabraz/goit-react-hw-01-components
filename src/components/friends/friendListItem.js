@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { FriendItem, Status } from "./friends.styled";
 
 
-export default function FriendCard({avatar, name, isOnline}) {
+export default function FriendListItem({avatar, name, isOnline}) {
     return (
     <FriendItem>
             <Status isOnline ={isOnline}>{isOnline}</Status>
@@ -12,7 +12,7 @@ export default function FriendCard({avatar, name, isOnline}) {
     )
 };
 
-FriendCard.propTypes = {
+FriendListItem.propTypes = {
     avatar: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     isOnline:PropTypes.bool.isRequired,
