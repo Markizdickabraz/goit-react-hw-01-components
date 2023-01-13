@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Transaction from "./transation";
 
 export default function TransactionsList( {items }) {
@@ -13,3 +14,7 @@ export default function TransactionsList( {items }) {
             
     </tbody>
     )}
+
+TransactionsList.propTypes = {
+    items: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
+    }
