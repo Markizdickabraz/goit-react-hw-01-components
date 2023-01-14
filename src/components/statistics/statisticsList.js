@@ -1,9 +1,11 @@
-
+import PropTypes from 'prop-types';
+import { StatiscticListStyle } from "./statistics.styled";
 import StatisticsListItem from "./statisticsListItem";
+
 
 export default function StatisticsList({stats}) {
     return (
-        <ul>
+        <StatiscticListStyle>
             {stats.map(statsItem => (
                 <StatisticsListItem
                     key={statsItem.id}
@@ -11,6 +13,10 @@ export default function StatisticsList({stats}) {
                     percentage={statsItem.percentage}
                 />
             ))}
-        </ul>
+        </StatiscticListStyle>
     )
+}
+
+StatisticsList.prototype = {
+    stats:PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
 }

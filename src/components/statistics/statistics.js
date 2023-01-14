@@ -1,12 +1,14 @@
 import StatisticsList from "./statisticsList"
-import data from '../../data.json'
+import data from '../../data.json';
+import StatisticsTitle from "./statisticsTitle";
+import { Section } from "./statistics.styled";
 
 export default function Statistics() {
   return (
-<section className="statistics">
-      <h2 className="title">Upload stats</h2>
+<Section>
+      <StatisticsTitle className="title" title="Upload stats" /> 
       <StatisticsList stats= {data} />
-</section>
-
+</Section>
   )
 }
+
