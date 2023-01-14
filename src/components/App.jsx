@@ -1,7 +1,6 @@
 import UserCard from "./userCard/userCard";
 import User from '../../src/user.json';
-// import Statistics from "./statistics/statistics";
-// import data from '../../src/data.json';
+import Statistics from "./statistics/statistics";
 import FriendList from "./friends/friendsList";
 import friends from "../../src/friends.json";
 import TransactionsHistory from "./transationHistory/transationsHistory";
@@ -16,11 +15,10 @@ export const App = () => {
       location={User.location}
       avatar={User.avatar}
       stats={User.stats} />
+      <Statistics/> 
       <FriendList
         friends={friends} />;
       <TransactionsHistory/>;
-     {/* <Statistics title="Upload stats" stats={data} /> */}
-      {/* <Statistics stats={data} />  */}
     </div>
   );
 };
