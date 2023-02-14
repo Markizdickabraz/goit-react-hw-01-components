@@ -6,7 +6,9 @@ import { Section } from "./statistics.styled";
 export default function Statistics() {
   return (
 <Section>
-      <StatisticsTitle className="title" title="Upload stats" stats={data} /> 
+      <StatisticsTitle className="title" title="Upload stats" stats={data}>{
+        // data.title && <h2>{StatisticsTitle.title }</h2>
+      }</StatisticsTitle> 
       <StatisticsList stats= {data} />
 </Section>
   )

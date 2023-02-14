@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import data from '../../data.json';
 
 
-export default function StatisticsTitle({ title }) {
+export default function StatisticsTitle({title}) {
     return (
-        title && <h2>{title}</h2>)
+        data.title && <h2>{title}</h2>)
 }
 
 StatisticsTitle.prototype = {
