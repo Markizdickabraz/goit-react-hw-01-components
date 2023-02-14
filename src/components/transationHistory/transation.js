@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import { Tr } from "./transaction.styled"
-export default function Transaction ({type, amount, currency}) {
+export default function Transaction ({id, type, amount, currency}) {
     return (
-    <Tr>
+    <Tr key ={id}>
       <td>{type}</td>
         <td>{ amount}</td>
       <td>{currency}</td>
