@@ -4,11 +4,12 @@ import PropTypes from 'prop-types';
 import StatisticsListItem from "./statisticListItem";
 import { StatisticListStyle ,Section} from "./statistics.styled";
 
-export default function Statistics({stats }) {
+export default function Statistics({title ,stats }) {
     return (
         <Section>
+            {title.title &&  (<h2 className="title">Upload stats</h2>)}
             
-            <StatisticListStyle>
+            <StatisticListStyle className='stat-list'>
             {stats.map(statsItem => (
                 <StatisticsListItem
                     key={statsItem.id}
