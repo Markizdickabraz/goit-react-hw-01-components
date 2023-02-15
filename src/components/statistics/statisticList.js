@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import { StatiscticListStyle } from "./statistics.styled";
-import StatisticsListItem from "./statisticsListItem";
+import StatisticsListItem from "./statisticListItem";
 
 
-export default function StatisticsList({stats}) {
+export default function StatisticsList(stats) {
     return (
         <StatiscticListStyle>
             {stats.map(statsItem => (

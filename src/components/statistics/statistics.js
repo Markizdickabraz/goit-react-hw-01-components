@@ -1,16 +1,13 @@
-import StatisticsList from "./statisticsList"
-import data from '../../data.json';
-import StatisticsTitle from "./statisticsTitle";
-import { Section } from "./statistics.styled";
+// import { StatsItem } from 'components/userCard/userCard.styled';
+// import PropTypes from 'prop-types';
+import StatisticsList from "./statisticList";
 
-export default function Statistics() {
-  return (
-<Section>
-      <StatisticsTitle className="title" title="Upload stats" stats={data}>{
-        // data.title && <h2>{StatisticsTitle.title }</h2>
-      }</StatisticsTitle> 
-      <StatisticsList stats= {data} />
-</Section>
-  )
+export default function Statistics({ title }, { stats }) {
+    return (
+        <section>
+            {title} && <h2>{title}</h2>
+
+            <StatisticsList stats={ stats} />          
+</section>
+    )
 }
-

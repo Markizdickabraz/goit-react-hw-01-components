@@ -22,4 +22,3 @@ background-color:${props => props.backgroundColor};
 width: calc((100%-30px)/5);
 height:50px;
 `;
-
