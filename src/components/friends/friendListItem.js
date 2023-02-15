@@ -6,7 +6,7 @@ export default function FriendListItem({id,avatar, name, isOnline}) {
     return (
     <FriendItem key= {id}>
             <Status isOnline ={isOnline}>{isOnline}</Status>
-  <img className="avatar" src={avatar} alt="User avatar" width="48" />
+            <img className="avatar" src={avatar} alt="User avatar" width="48" />
             <p className="name">{name }</p>
 </FriendItem>
     )
