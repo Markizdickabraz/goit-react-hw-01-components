@@ -7,7 +7,7 @@ text-align:center;
 border:1px solid black;
 `;
 
-export const StatiscticListStyle = styled.ul`
+export const StatisticListStyle = styled.ul`
 margin:0;
 display:flex;
 list-style:none;
