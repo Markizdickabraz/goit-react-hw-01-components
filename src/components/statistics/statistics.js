@@ -7,7 +7,7 @@ import { StatisticListStyle ,Section} from "./statistics.styled";
 export default function Statistics({title ,stats }) {
     return (
         <Section>
-            {title.title &&  (<h2 className="title">Upload stats</h2>)}
+            {title &&  (<h2 className="title">{title}</h2>)}
             
             <StatisticListStyle className='stat-list'>
             {stats.map(statsItem => (
