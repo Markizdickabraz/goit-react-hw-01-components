@@ -15,7 +15,7 @@ export default function FriendList({ friends }) {
      
       ))}
     </FriendListStyle>
-  );
+  )
 }
 FriendList.prototype = {
   friends:PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,

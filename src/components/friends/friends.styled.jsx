@@ -30,5 +30,5 @@ background-color: ${props => {
         default:
             return '#fff';
    }
-}};
+}}
 `;
